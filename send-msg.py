@@ -12,3 +12,7 @@ client = Client()
 # Defining sender and receiver of messages:
 from_num = f'whatsapp:{your_num}'
 to_num = f'whatsapp:{to}'
+
+client.messages.create(body='Hello, world!',
+                       from_=from_num,
+                       to=to_num)
